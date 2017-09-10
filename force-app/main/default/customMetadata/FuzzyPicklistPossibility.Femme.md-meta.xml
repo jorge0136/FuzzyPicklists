@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Femme</label>
+    <protected>false</protected>
+    <values>
+        <field>FuzzyPicklistValue__c</field>
+        <value xsi:type="xsd:string">Female</value>
+    </values>
+    <values>
+        <field>Match_String__c</field>
+        <value xsi:type="xsd:string">Femme</value>
+    </values>
+</CustomMetadata>

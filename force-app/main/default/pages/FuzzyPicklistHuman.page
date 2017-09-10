@@ -1,0 +1,39 @@
+<apex:page controller="FuzzyPicklistHuman_CTL">
+    <head>
+        <apex:slds />
+    </head>
+    <div class="slds-scope">
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:form >
+                    <apex:repeat value="{!allFuzzyPicklists}" var="fp">
+                        <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="{!fp.DeveloperName}">{!fp.DeveloperName}</h1>
+                        <apex:variable var="selectedFP" value="{!fp}" />
+                        <apex:repeat value="{!recordsForFP}" var="rec">
+                            <apex:inputfield value="{!rec[fp.Free_Text_Field__r.QualifiedAPIName]}" />
+                            <br />
+                        </apex:repeat>
+                    </apex:repeat>
+                </apex:form>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <!--
+<apex:form>
+<apex:pageBlock title="Congratulations {!$User.FirstName}">
+You belong to Account Name: <apex:inputField value="{!account.name}"/>
+<apex:commandButton action="{!save}" value="save"/>
+</apex:pageBlock>
+<apex:pageBlock mode="edit">
+<apex:pageMessages/>
+<apex:pageBlockSection>
+<apex:inputField value="{!Account.name}"/>
+<apex:inputField value="{!Account.phone}"/>
+<apex:inputField value="{!Account.industry}"/>
+</apex:pageBlockSection>
+<apex:pageBlockButtons location="bottom">
+<apex:commandButton value="Save" action="{!save}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form> -->
+    </div>
+</apex:page>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Gender</label>
+    <protected>false</protected>
+    <values>
+        <field>Free_Text_Field__c</field>
+        <value xsi:type="xsd:string">Gender_Free_Text__c</value>
+    </values>
+    <values>
+        <field>Match_Last_Evaluated_Date_Time_Field__c</field>
+        <value xsi:type="xsd:string">Gender_Picklist_Last_Updated__c</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+    <values>
+        <field>Picklist_Field__c</field>
+        <value xsi:type="xsd:string">Gender_Picklist__c</value>
+    </values>
+    <values>
+        <field>Text_Last_Populated_Date_Time_Field__c</field>
+        <value xsi:type="xsd:string">Gender_Free_Text_Last_Updated__c</value>
+    </values>
+</CustomMetadata>
