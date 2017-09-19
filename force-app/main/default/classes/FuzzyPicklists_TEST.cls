@@ -10,8 +10,8 @@ public class FuzzyPicklists_TEST {
         fpjson += ',"Object__c":"Contact"';
         fpjson += ',"Free_Text_Field__c":"Contact.Title"';
         fpjson += ',"Picklist_Field__c":"Contact.LeadSource"';
-        fpjson += ',"Match_Last_Evaluated_Date_Time_Field__c":"Contact.LastCURequestDate"';
-        fpjson += ',"Text_Last_Populated_Date_Time_Field__c":"Contact.LastCUUpdateDate"';
+        fpjson += ',"Match_Last_Evaluated_Date_Time_Field__c":"Contact.LastModifiedDate"';
+        fpjson += ',"Text_Last_Populated_Date_Time_Field__c":"Contact.CreatedDate"';
         fpjson += '}]';
         FuzzyPicklistSelector.fuzzyPicklists = (List<FuzzyPicklist__mdt>) JSON.deserialize(fpjson, List<FuzzyPicklist__mdt>.class );
         system.debug(FuzzyPicklistSelector.fuzzyPicklists);
